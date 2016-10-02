@@ -5,24 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version:- gem 'rails', '4.0.2'...ruby '2.0.0'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* System dependencies:- No system dependencies as such.
 
 * ...
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Social Pigeon is people helping people app to deliver items to desired locations.
+People who're travelling somewhere, can join and app will find people who are in need of sending some urgent deliverables through the crowd sourcing. They can even mention their conditions on their participation.
+People who want to send the items can join in too. Senders can also mention their conditions.
+The app will match the people based on location of delivery, distance between sender and traveller, conditions specified by both and help people in helping each other to deliver the products for almost free and "more importantly, safely".
