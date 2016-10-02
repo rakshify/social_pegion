@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sender.name %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @sender.phone_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @sender.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @sender.address %>
+</p>
+
+<p>
+  <strong>Send from:</strong>
+  <%= @sender.send_from %>
+</p>
+
+<p>
+  <strong>Send to:</strong>
+  <%= @sender.send_to %>
+</p>
+
+<p>
+  <strong>Send date range:</strong>
+  <%= @sender.send_date_range %>
+</p>
+
+<p>
+  <strong>Item description:</strong>
+  <%= @sender.item_description %>
+</p>
+
+<%= link_to 'Edit', edit_sender_path(@sender) %> |
+<%= link_to 'Look for Traveller', {:controller => "travellers", :action => "filter_results", :id => @sender.id} %>

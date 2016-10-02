@@ -1,0 +1,26 @@
+<h1>Found following travellers</h1>
+<h3>travelling from <%= @hash[:sender][:send_from]%> to <%= @hash[:sender][:send_to]%> in the next <%= @hash[:sender][:send_date_range]%> days</h3>
+<table  class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Travel date</th>
+      <th>Conditions</th>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hash[:travellers].each do |traveller| %>
+      <tr>
+        <td><%= traveller.name %></td>
+        <td><%= traveller.travel_date %></td>
+        <td><%= traveller.conditions %></td>
+        <td><%= link_to 'Show', traveller %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

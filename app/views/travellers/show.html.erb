@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @traveller.name %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @traveller.phone_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @traveller.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @traveller.address %>
+</p>
+
+<p>
+  <strong>Travelling from:</strong>
+  <%= @traveller.travelling_from %>
+</p>
+
+<p>
+  <strong>Travelling to:</strong>
+  <%= @traveller.travelling_to %>
+</p>
+
+<p>
+  <strong>Travel date:</strong>
+  <%= @traveller.travel_date %>
+</p>
+
+<p>
+  <strong>Conditions:</strong>
+  <%= @traveller.conditions %>
+</p>
+
+<%= link_to 'Edit', edit_traveller_path(@traveller) %> |
